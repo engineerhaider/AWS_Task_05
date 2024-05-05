@@ -13,10 +13,10 @@ spec:
         app: spring-boot-k8s
     spec:
       containers:
-        - name: spring-boot-k8s
-          image: springboot-k8s-example:1.0
+        - name: aws-springboot
+          image: aws-springboot
           # Image that will be used to containers in the cluster
           imagePullPolicy: IfNotPresent
           ports:
-            - containerPort: 8080
+            - containerPort: 8081
 # The port that the container is running on in the cluster
